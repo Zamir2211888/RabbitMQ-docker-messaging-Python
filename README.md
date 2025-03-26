@@ -2,7 +2,9 @@
 
 Primero iniciamos el contenedor de RabbitMQ
 
-[Visita mi sitio web](https://www.misitio.com)
+```bash
+docker run -it --rm --name rabbitmq -p 5552:5552 -p 15672:15672 -p 5672:5672 -e RABBITMQ_SERVER_ADDITIO
+
 
 docker run -d --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:management
 
