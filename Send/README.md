@@ -1,11 +1,16 @@
 
 Crea una carpeta python-producer en tu directorio y alli agrega:
 
--Crea un archivo producer.py y agrega su respectivo codigo.
--En el mismo directorio, crea un archivo Dockerfile para el productor Python con su respectivo codigo.
+1.Crea un archivo producer.py y agrega su respectivo codigo.
 
+2.En el mismo directorio, crea un archivo Dockerfile para el productor Python con su respectivo codigo.
 
-Construir y ejecutar el contenedor del Productor:
 
 En el directorio donde tienes el Dockerfile, ejecuta estos comandos:
+
+```bash 
+docker build -t python-producer .
+docker run --link rabbitmq:rabbitmq python-producer
+´´´bash´´´
+
 
