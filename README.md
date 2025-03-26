@@ -9,5 +9,6 @@ Para acceder a la interfaz de administración de RabbitMQ, ve a http://"10.6.101
 Cambia "10.6.101.98" por tu localhost.
 
 Las credenciales por defecto son:
+
 Usuario: guest
 Contraseña: guest
