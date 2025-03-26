@@ -16,4 +16,10 @@ Las credenciales por defecto son:
 2. Contraseña: guest
 
 
-# Luego Creamos la carpeta python-consumer y python-producer.
+# Luego Creamos la carpeta python-producer y python-consumer.
+```bash
+mkdir python-producer
+```
+```bash
+mkdir python-consumer
+```
