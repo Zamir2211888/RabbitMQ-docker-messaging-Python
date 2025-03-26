@@ -27,3 +27,21 @@ mkdir python-producer
 ```bash
 mkdir python-consumer
 ```
+
+
+# Conectar ambos contenedores a RabbitMQ
+
+1. Ejecuta el contenedor Consumidor primero:
+```bash
+docker run --link rabbitmq:rabbitmq python-consumer
+```
+
+2. Ejecuta el contenedor Productor después:
+```bash
+docker run --link rabbitmq:rabbitmq python-producer
+```
+
+Verifica El contenedor del consumidor debería imprimir en su consola:
+```bash
+[x] Received Hello from Python Producer!
+```
