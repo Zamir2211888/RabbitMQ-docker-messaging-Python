@@ -11,6 +11,4 @@ En el directorio donde tienes el Dockerfile, ejecuta estos comandos:
 ```bash 
 docker build -t python-producer .
 docker run --link rabbitmq:rabbitmq python-producer
-´´´bash´´´
-
 
