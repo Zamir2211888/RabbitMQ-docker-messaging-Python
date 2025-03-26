@@ -24,9 +24,11 @@ Las credenciales por defecto son:
 ```bash
 mkdir python-producer
 ```
+Para el productor 
 ```bash
 mkdir python-consumer
 ```
+Para el consumidor
 
 
 # Conectar ambos contenedores a RabbitMQ
@@ -41,7 +43,7 @@ docker run --link rabbitmq:rabbitmq python-consumer
 docker run --link rabbitmq:rabbitmq python-producer
 ```
 
-Verifica El contenedor del consumidor debería imprimir en su consola:
+Verificamos el contenedor del consumidor debería imprimir en su consola:
 ```bash
 [x] Received Hello from Python Producer!
 ```
